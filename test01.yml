@@ -1,0 +1,19 @@
+---
+
+- hosts: ucs1
+  connection: local
+  gather_facts: no
+  vars:
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
+
+  tasks:
+
+    - name: enable ntp 2
+      ucs_vlans:
+        hostname: "{{ucs_hostname}}"
+        username: "{{ucs_username}}"
+        password: "{{ucs_password}}"
+        state: "{{ucs_state}}"
+        name: vlan2
+        id: '2'
+        native: 'no'
