@@ -24,4 +24,3 @@ ucs1                       : ok=1    changed=0    unreachable=0    failed=0
 
 ### UCS Platform Emulator OVA
 cisco - https://cisco.app.box.com/v/ucspe-3-2-3e-ova
-# cisco_ucs_ansible_ex
